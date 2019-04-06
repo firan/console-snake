@@ -28,6 +28,7 @@ public class Snake extends GameObject {
 
     public void moveDown(GameScreen screen, Snake snake) {
         snake.setY(getY() + 1);
+        System.out.println("ide w dol");
         screen.setObjectOnLocation(snake, snake.getX(), snake.getY());
         screen.ClearScreenLocation(snake.getX(), snake.getY() - 1);
     }
